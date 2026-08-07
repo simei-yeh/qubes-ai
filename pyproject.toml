@@ -1,0 +1,24 @@
+[project]
+name = "qubes-ai"
+version = "0.1.0"
+description = "momentum stock trading portfolio project"
+readme = "README.md"
+authors = [
+    { name = "Simei Yeh", email = "simei.yeh@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.0.3",
+    "polars>=1.8.2",
+    "pyarrow>=17.0.0",
+    "requests>=2.32.4",
+    "ta-lib>=0.6.5",
+    "yfinance>=1.2.0",
+]
+
+[project.scripts]
+qubes-ai = "qubes_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
